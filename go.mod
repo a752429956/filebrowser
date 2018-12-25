@@ -18,6 +18,7 @@ require (
 	github.com/google/uuid v1.1.0 // indirect
 	github.com/gorilla/context v1.1.1 // indirect
 	github.com/gorilla/mux v1.6.2
+	github.com/gorilla/websocket v1.4.0
 	github.com/hacdias/fileutils v0.0.0-20171121222743-76b1c6ab9067
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/jessevdk/go-flags v1.4.0 // indirect
@@ -26,9 +27,11 @@ require (
 	github.com/maruel/natural v0.0.0-20180416170133-dbcb3e2e8cf1
 	github.com/mholt/archiver v3.1.0+incompatible
 	github.com/mholt/caddy v0.11.1
+	github.com/mitchellh/mapstructure v1.1.2
 	github.com/nwaples/rardecode v1.0.0 // indirect
 	github.com/pierrec/lz4 v2.0.5+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/robfig/cron v0.0.0-20180505203441-b41be1df6967
 	github.com/spf13/afero v1.1.2
 	github.com/spf13/cobra v0.0.3
 	github.com/spf13/pflag v1.0.2

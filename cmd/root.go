@@ -32,7 +32,7 @@ func init() {
 var rootCmd = &cobra.Command{
 	Use:   "filebrowser",
 	Short: "A stylish web-based file browser",
-	Long:  `File Browser CLI lets you create the database to use with File Browser,
+	Long: `File Browser CLI lets you create the database to use with File Browser,
 manage your user and all the configurations without accessing the
 web interface.
 
@@ -66,6 +66,7 @@ listening on loalhost on a random port. Use the flags to change it.`,
 			Store: &types.Store{
 				Users:  bolt.UsersStore{DB: db},
 				Config: bolt.ConfigStore{DB: db},
+				Share:  bolt.ShareStore{DB: db},
 			},
 		}
 

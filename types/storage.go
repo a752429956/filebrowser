@@ -4,6 +4,7 @@ package types
 type Store struct {
 	Users  UsersStore
 	Config ConfigStore
+	Share  ShareStore
 }
 
 // UsersStore is used to manage users relativey to a data storage.
@@ -26,4 +27,14 @@ type ConfigStore interface {
 	GetRunner() (*Runner, error)
 	GetAuther(AuthMethod) (Auther, error)
 	SaveAuther(Auther) error
+}
+
+// ShareStore is the interface to manage share links.
+type ShareStore interface {
+	Get(hash string) (*ShareLink, error)
+	GetPermanent(path string) (*ShareLink, error)
+	GetByPath(path string) ([]*ShareLink, error)
+	Gets() ([]*ShareLink, error)
+	Save(s *ShareLink) error
+	Delete(hash string) error
 }

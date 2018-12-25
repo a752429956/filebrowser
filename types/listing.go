@@ -6,6 +6,7 @@ import (
 	"github.com/maruel/natural"
 )
 
+// Listing is a collection of files.
 type Listing struct {
 	Items    []*File `json:"items"`
 	NumDirs  int     `json:"numDirs"`
